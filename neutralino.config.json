@@ -1,71 +1,36 @@
 {
-  "applicationId": "js.neutralino.sample",
-  "version": "1.0.0",
+  "applicationId": "com.biodepot",
+  "port": 8080,
   "defaultMode": "window",
-  "port": 0,
-  "documentRoot": "/resources/",
-  "url": "/",
   "enableServer": true,
   "enableNativeAPI": true,
-  "tokenSecurity": "one-time",
+  "url": "/dist/",
   "logging": {
-    "enabled": true,
-    "writeToLogFile": true
-  },
-  "nativeAllowList": [
-    "app.*",
-    "os.*"
-  ],
-  "globalVariables": {
-    "TEST1": "Hello",
-    "TEST2": [
-      2,
-      4,
-      5
-    ],
-    "TEST3": {
-      "value1": 10,
-      "value2": {}
-    }
+    "enabled": true
   },
   "modes": {
     "window": {
       "title": "BioDepot",
-      "width": 800,
-      "height": 500,
+      "width": 1024,
+      "height": 800,
       "minWidth": 400,
-      "minHeight": 200,
+      "minHeight": 250,
       "fullScreen": false,
       "alwaysOnTop": false,
-      "icon": "/resources/icons/appIcon.png",
-      "enableInspector": true,
+      "icon": "/files/icons/icon.png",
+      "enableInspector": false,
       "borderless": false,
       "maximize": false,
-      "hidden": false,
-      "resizable": true,
-      "exitProcessOnClose": false
+      "exitProcessOnClose": true
     },
-    "browser": {
-      "globalVariables": {
-        "TEST": "Test value browser"
-      },
-      "nativeBlockList": [
-        "filesystem.*"
-      ]
-    },
-    "cloud": {
-      "url": "/resources/#cloud",
-      "nativeAllowList": [
-        "app.*"
-      ]
-    }
+    "browser": {},
+    "cloud": {}
   },
   "cli": {
-    "binaryName": "BioDepot",
-    "resourcesPath": "/resources/",
-    "extensionsPath": "/extensions/",
-    "clientLibrary": "/resources/js/neutralino.js",
-    "binaryVersion": "4.3.0",
-    "clientVersion": "3.2.0"
+    "binaryName": "neu-vite-yooneskh",
+    "resourcesPath": "/dist/",
+    "clientLibrary": "/resources/neutralino.js",
+    "binaryVersion": "3.0.0",
+    "clientVersion": "2.0.0"
   }
 }
